@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
-
 * {
     box-sizing: border-box;
 }
@@ -15,7 +14,7 @@ body {
     text-shadow: 0 0 1px #000, 0 0 2px #000;
     background-color: black;
     /*font-family: 'Nunito Sans', sans-serif;*/
-  	font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.5em;
@@ -23,13 +22,13 @@ body {
 }
 
 #log>div .meta {
-  animation: fadeInLeft .3s ease forwards, fadeOutRight 0.5s ease 10s forwards, flicker 1.5s infinite alternate;
-  -webkit-animation: fadeInLeft .3s ease forwards, fadeOutRight 0.5s ease 10s forwards, flicker 1.5s infinite alternate;
+    animation: fadeInLeft .3s ease forwards, fadeOutRight 0.5s ease 10s forwards, flicker 1.5s infinite alternate;
+    -webkit-animation: fadeInLeft .3s ease forwards, fadeOutRight 0.5s ease 10s forwards, flicker 1.5s infinite alternate;
 }
 
 #log>div .message {
-  animation: fadeInRight .3s ease forwards, fadeOutLeft 0.5s ease 10s forwards;
-  -webkit-animation: fadeInRight .3s ease forwards, fadeOutLeft 0.5s ease 10s forwards;
+    animation: fadeInRight .3s ease forwards, fadeOutLeft 0.5s ease 10s forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOutLeft 0.5s ease 10s forwards;
 }
 
 .colon {
@@ -44,8 +43,8 @@ body {
     padding: 0 10px 10px;
     width: 100%;
     table-layout: fixed;
-  	border-collapse:separate;
-    border-spacing:0 10px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
 }
 
 #log>div {
@@ -70,7 +69,7 @@ body {
     opacity: 0;
 }
 
-#log .message,#log .meta {
+#log .message, #log .meta {
     vertical-align: top;
     padding-bottom: 0.1em;
 }
@@ -89,7 +88,6 @@ body {
     border-radius: 0.5em;
 }
 
-
 #log .meta:focus {
     outline: none;
 }
@@ -107,7 +105,7 @@ body {
 
 #log .message {
     word-wrap: break-word;
-  	/*width: 65%;*/
+    /*width: 65%;*/
 }
 
 .badge {
@@ -121,4 +119,8 @@ body {
 
 .name {
     margin-left: 0.2em;
+}
+
+.moya {
+    background-color: red;
 }
