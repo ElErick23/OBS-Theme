@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+:root {
+    /* --neon-color: rgb(17, 90, 226); */
+    --body_w: 1920px;
+    --body_h: 1080px;
+}
+
+body {
+    width: var(--body_w);
+    height: var(--body_h);
+    background-color: black;
+    color: white;
+    /*font-family: 'Nunito Sans', sans-serif;*/
+    font-family: 'Exo 2', sans-serif;
+}
+
+#left-pane {
+    float: left;
+    margin: 20px 0 0 20px;
+    width: calc(var(--body_w) * 0.8 - 20px);
+    /* 1516px */
+    height: 100%;
+}
+
+#right-pane {
+    float: left;
+    margin: 20px 20px 0 10px;
+    --cam-h: calc(var(--body_w) * 0.2 - 30px);
+    width: calc(var(--body_w) * 0.2 - 30px);
+    /* 354px */
+    height: 100%;
+}
+
+.neon-frame {
+    position: relative;
+    border: 3px solid white;
+    border-radius: 20px;
+    animation: moving-light linear infinite;
+    --offset: 10px;
+}
+
+#gameplay {
+    width: 100%;
+    padding-bottom: 56.25%;
+    /*16:9*/
+    --neon-color: rgb(226, 17, 62);
+    animation-duration: 10s;
+}
+
+#cam {
+    width: 100%;
+    padding-bottom: 100%;
+    /*1:1*/
+    --neon-color: rgb(17, 90, 226);
+    animation-duration: 3s;
+}
+
+#chat {
+    width: 100%;
+    margin-top: 10px;
+    height: calc(var(--body_h) - var(--cam-h) - 50px);
+    --neon-color: rgb(34, 226, 17);
+    animation-duration: 5s;
+}
+
+@keyframes moving-light {
+    0% {
+        /* box-shadow: 0 0 10px white, inset 0 0 10px white, -10px -10px 50px var(--neon-color), inset 10px 10px 50px var(--neon-color); */
+        box-shadow: 0 0 10px white, inset 0 0 10px white, -10px -10px 50px var(--neon-color);
+    }
+    
+    25% {
+        /* box-shadow: 0 0 10px white, inset 0 0 10px white, -10px 10px 50px var(--neon-color), inset 10px -10px 50px var(--neon-color); */
+        box-shadow: 0 0 10px white, inset 0 0 10px white, -10px 10px 50px var(--neon-color);
+    }
+    
+    50% {
+        /* box-shadow: 0 0 10px white, inset 0 0 10px white, 10px 10px 50px var(--neon-color), inset -10px -10px 50px var(--neon-color); */
+        box-shadow: 0 0 10px white, inset 0 0 10px white, 10px 10px 50px var(--neon-color);
+    }
+    
+    75% {
+        /* box-shadow: 0 0 10px white, inset 0 0 10px white, 10px -10px 50px var(--neon-color), inset -10px 10px 50px var(--neon-color); */
+        box-shadow: 0 0 10px white, inset 0 0 10px white, 10px -10px 50px var(--neon-color);
+    }
+
+    100% {
+        /* box-shadow: 0 0 10px white, inset 0 0 10px white, -10px -10px 50px var(--neon-color), inset 10px 10px 50px var(--neon-color); */
+        box-shadow: 0 0 10px white, inset 0 0 10px white, -10px -10px 50px var(--neon-color);
+    }
+}
