@@ -2,19 +2,63 @@
 
 <head>
     <title>Background for streaming</title>
+    <link href="../resources/global.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div>
+    <div id="container">
+        <div id="bg-cover"></div>
         <div id="left-pane">
-            <div id="gameplay" class="neon-frame">
+            <div>
+                <div id="gameplay" class="neon-frame">
+                </div>
+                <span class="neon-sign" id="nombre">El_Erick23 | Sígueme :)</span>
             </div>
         </div>
         <div id="right-pane">
-            <div id="cam" class="neon-frame">
-            </div>
-            <div id="chat" class="neon-frame">
+            <div>
+                <div id="cam" class="neon-frame">
+                </div>
+                <div id="chat" class="neon-frame">
+                    <div id="log">
+                        <!-- <div data-from="{from}" data-id="{messageId}">
+                            <span class="meta" style="--neon-color: rgb(255, 0, 0)">
+                                <span class="badges">
+                                </span>
+                                <span class="name neon-text">xocostreamer</span>
+                            </span>
+                            
+                            <span class="message">
+                                Hola soy un texto :v
+                            </span>
+                        </div>
+                        <div data-from="{from}" data-id="{messageId}">
+                            <span class="meta" style="--neon-color: rgb(63, 33, 235)">
+                                <span class="badges">
+                                </span>
+                                <span class="name neon-text">moyaymaya</span>
+                            </span>
+                            
+                            <span class="message">
+                                Esto es una pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </span>
+                        </div> -->
+                    </div>
+                    <script>
+                        <div data-from="{from}" data-id="{messageId}">
+                            <span class="meta" style="--neon-color: {color}">
+                                <span class="badges">
+                                </span>
+                                <span class="name neon-text">{from}</span>
+                            </span>
+
+                            <span class="message">
+                                {message}
+                            </span>
+                        </div>
+                    </script>
+                </div>
             </div>
         </div>
     </div>
